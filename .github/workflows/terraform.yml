@@ -1,4 +1,4 @@
-name: "Terraform Validate"
+name: "validacion automatica"
 on: [push]
 
 jobs:
