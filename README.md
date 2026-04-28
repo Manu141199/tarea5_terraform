@@ -7,3 +7,4 @@ Cada vez que se sube código al repositorio, el sistema revisa la sintaxis de Te
 
 ## Estado del Proyecto
 El badge superior indica si la última validación fue exitosa (**passing**) o si contiene errores (**failing**).
+ 
