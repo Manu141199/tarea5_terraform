@@ -1,18 +1,10 @@
 name: "validacion automatica"
 on: [push]
-
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: "Copiando codigo"
-        uses: actions/checkout@v4
-
-      - name: "Instalando Terraform"
-        uses: hashicorp/setup-terraform@v3
-
-      - name: "Terraform Init"
-        run: terraform init
-
-      - name: "Terraform Validate"
-        run: terraform validate
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform init
+      - run: terraform validate
